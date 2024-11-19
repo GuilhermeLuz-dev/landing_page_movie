@@ -2,6 +2,12 @@
 
 .atores {
     position: relative;
+
+    .title {
+        @media(max-width: 767px) {
+            padding: 0px 20px;
+        }
+    }
 }
 
 .atores__content {
@@ -12,6 +18,10 @@
     background-image: url("../images/banner_horizontal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media(max-width: 767px) {
+        padding: 30px 20px;
+    }
 
     &::before {
         content: '';
@@ -58,7 +68,7 @@
         z-index: 2;
         padding: 30px 0;
         display: flex;
-        width: 201%;
+        width: calc(1025px * 2);
 
         &__card {
             width: 9.1%;

@@ -28,6 +28,10 @@ a {
     margin: 0 auto;
     max-width: 1024px;
     width: 100%;
+
+    @media screen and (max-width: 1024px) and (min-width: 767px) {
+        padding: 10px 20px;
+    }
 }
 
 @mixin text($font-size: 20px) {
@@ -53,10 +57,18 @@ a {
         @include title(60px);
         font-weight: 400;
     }
+
+    @media (max-width: 767px) {
+        @include title(40px);
+    }
 }
 
 .text {
     @include text();
+
+    @media (max-width: 767px) {
+        @include text(18px);
+    }
 }
 
 footer {
@@ -67,11 +79,14 @@ footer {
 
     h2 {
         margin-bottom: 10px;
-    }   
+    }  
+    
+    ul{
+        margin-bottom: 20px;
+    }
 
-    li{
+    li {
         display: inline;
         margin-right: 10px;
     }
-  
 }

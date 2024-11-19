@@ -1,8 +1,20 @@
-.trailer__content{
+.trailer {
+    .title {
+        @media(max-width: 767px) {
+            padding: 30px 20px;
+        }
+    }
+}
+
+.trailer__content {
     display: flex;
     justify-content: center;
+    @media(max-width: 767px){
+        padding: 0 10px;
+    }
 
-    iframe{
+
+    iframe {
         border-radius: 10px;
         margin-bottom: 50px;
     }

@@ -1,5 +1,77 @@
 @use "./variaveis";
+@use "./hero";
+@use "./movie";
+@use "./atores";
+@use "./trailer";
 
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background-color: variaveis.$primary_color;
+    font-family: variaveis.$default_font;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: variaveis.$text_color;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+}
+
+@mixin text($font-size: 20px) {
+    font-size: $font-size;
+    line-height: $font-size + 10;
+    color: variaveis.$text_color;
+}
+
+@mixin title($font-size: 30px) {
+    @include text($font-size);
+    background: linear-gradient(90deg, #BD36B9 0.5%, #FC0A21 78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.title {
+    @include title(40px);
+
+    &--big {
+        @include title(60px);
+        font-weight: 400;
+    }
+}
+
+.text {
+    @include text();
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        margin-bottom: 10px;
+    }   
+
+    li{
+        display: inline;
+        margin-right: 10px;
+    }
+  
 }

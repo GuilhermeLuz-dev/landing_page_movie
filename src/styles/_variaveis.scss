@@ -1,2 +1,11 @@
+@font-face {
+    font-family: "Luckiest Guy";
+    src: url("../../assets/fonts/LuckiestGuy-Regular.ttf");
+}
+
 $filter_color: #200b4abf;
 $primary_color: #200B4A;
+$button_color: #BD36B9;
+$text_color: #ececec;
+
+$default_font: "Luckiest Guy", Arial, Helvetica, sans-serif;

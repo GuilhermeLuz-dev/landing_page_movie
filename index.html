@@ -1,14 +1,145 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="build/styles/main.css">
 </head>
+
 <body>
-    <header id="hero">
-        
+    <header class="hero">
+        <div class="hero__content container">
+            <h1 class="title title--big">Vingadores: Ultimato</h1>
+            <p class="text">Após os eventos devastadores de "Vingadores: Guerra Infinita", o universo está em ruínas
+                devido aos
+                esforços do Titã Louco, Thanos. Com a ajuda de aliados remanescentes, os Vingadores devem se reunir mais
+                uma vez a fim de desfazer as ações de Thanos e restaurar a ordem no universo de uma vez por todas, não
+                importando as consequências.</p>
+            <div class="hero__content__buttons">
+                <button>Assista agora</button>
+                <button>Assistir Trailer</button>
+            </div>
+        </div>
     </header>
+    <section class="movie">
+        <div class="movie__content container">
+            <div class="movie__content__image">
+                <img src="./src/images/capa_filme.jpg" alt="Capa do filme">
+            </div>
+            <ul class="movie__content__desc text">
+                <li>VINGADORES: UTIMATO</li>
+                <li>Lançamento: 25/04/2019 (BR)</li>
+                <li>Categoria: Aventura, Ficção Científica, Ação</li>
+                <li>Duração: 3h 1m</li>
+                <li>INDICADO PARA MAIORES DE 12 ANOS</li>
+                <li>Disponível no Disney+</li>
+            </ul>
+        </div>
+    </section>
+    <section class="atores">
+        <h1 class="title container">Atores</h1>
+        <div class="atores__content">
+            <div class="carousel container">
+                <ul class="carousel__galery">
+                    <li class="carousel__galery__card">
+                        <img class="carousel__galery__card__image" src="./src/images/atores/tonyStark.png" alt="">
+                        <div class="carousel__galery__card__name">
+                            <h4 class="text">Robert Downey Jr.</h4>
+                            <p class="text">Tony Stark / Iron Man</p>
+                        </div>
+                    </li>
+                    <li class="carousel__galery__card">
+                        <img class="carousel__galery__card__image" src="./src/images/atores/hulk.png" alt="">
+                        <div class="carousel__galery__card__name">
+                            <h4 class="text">Mark Ruffalo</h4>
+                            <p class="text">Bruce Banner / Hulk</p>
+                        </div>
+                    </li>
+                    <li class="carousel__galery__card">
+                        <img class="carousel__galery__card__image" src="./src/images/atores/arqueiro.png" alt="">
+                        <div class="carousel__galery__card__name">
+                            <h4 class="text">Jeremy Renner</h4>
+                            <p class="text">Clint Barton / Hawkeye</p>
+                        </div>
+                    </li>
+                    <li class="carousel__galery__card">
+                        <img class="carousel__galery__card__image" src="./src/images/atores/capitaoAmerica.png" alt="">
+                        <div class="carousel__galery__card__name">
+                            <h4 class="text">Chris Evans</h4>
+                            <p class="text">Steve Rogers / Captain America</p>
+                        </div>
+                    </li>
+                    <li class="carousel__galery__card">
+                        <img class="carousel__galery__card__image" src="./src/images/atores/homemAranha.png" alt="">
+                        <div class="carousel__galery__card__name">
+                            <h4 class="text">Tom Holland</h4>
+                            <p class="text">Peter Parker / Spider-Man</p>
+                        </div>
+                    </li>
+                    <li class="carousel__galery__card">
+                        <img class="carousel__galery__card__image" src="./src/images/atores/homemFormiga.png" alt="">
+                        <div class="carousel__galery__card__name">
+                            <h4 class="text">Paul Rudd</h4>
+                            <p class="text">Scott Lang / Ant-Man</p>
+                        </div>
+                    </li>
+                    <li class="carousel__galery__card">
+                        <img class="carousel__galery__card__image" src="./src/images/atores/thanos.png" alt="">
+                        <div class="carousel__galery__card__name">
+                            <h4 class="text">Josh Brolin</h4>
+                            <p class="text">Thanos</p>
+                        </div>
+                    </li>
+                    <li class="carousel__galery__card">
+                        <img class="carousel__galery__card__image" src="./src/images/atores/thor.png" alt="">
+                        <div class="carousel__galery__card__name">
+                            <h4 class="text">Chris Hemsworth</h4>
+                            <p class="text">Thor</p>
+                        </div>
+                    </li>
+                    <li class="carousel__galery__card">
+                        <img class="carousel__galery__card__image" src="./src/images/atores/viuvaNegra.png" alt="">
+                        <div class="carousel__galery__card__name">
+                            <h4 class="text">Scarlett Johansson</h4>
+                            <p class="text">Natasha Romanoff / Black Widow</p>
+                        </div>
+                    </li>
+                    <li class="carousel__galery__card">
+                        <img class="carousel__galery__card__image" src="./src/images/atores/warMachine.png" alt="">
+                        <div class="carousel__galery__card__name">
+                            <h4 class="text">Don Cheadle</h4>
+                            <p class="text">James Rhodes / War Machine</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="trailer">
+        <div class="title container">Trailer</div>
+        <div class="trailer__content container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/spJoZReeIeQ?si=jvg9d67ME8xORze3"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <footer class="container">
+        <h2 class="text">Product By Guilherme Luz</h2>
+        <ul>
+            <li>
+                <a href=""><img src="./src/images/icons/git_hub.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="./src/images/icons/instagram.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="./src/images/icons/linkedin.png" alt=""></a>
+            </li>
+        </ul>
+    </footer>
 </body>
+
 </html>

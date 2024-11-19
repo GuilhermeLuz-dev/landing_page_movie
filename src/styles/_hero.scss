@@ -1,4 +1,52 @@
-#hero {
-    border: 1px solid rgba(32, 11, 74, 0.79);
-    background: #200b4abf;
+@use "./variaveis";
+
+.hero {
+    width: 100%;
+    position: relative;
+    padding: 50px;
+    background-image: url("../images/imagem_fundo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: variaveis.$filter_color;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__content {
+        position: relative;
+        padding: 60px 0;
+        z-index: 2;
+        h1 {
+            width: 70%;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            width: 70%;
+            margin-bottom: 2rem;
+        }
+
+        &__buttons {
+            display: flex;
+            gap: 20px;
+
+            button {
+                background-color: variaveis.$button_color;
+                border: none;
+                padding: 20px 48px;
+                color: variaveis.$text_color;
+                text-transform: uppercase;
+                font-family: variaveis.$default_font;
+                border-radius: 5px;
+            }
+        }
+    }
 }

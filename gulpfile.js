@@ -7,13 +7,13 @@ function buildStyles(){
             .pipe(sass({
                 outputStyle : "compressed"
             }))
-            .pipe(gulp.dest("build/styles"));
+            .pipe(gulp.dest("dist/styles"));
 }
 
 function images(){
     return gulp.src("./src/images/*.jpg")
             .pipe(imagemin())
-            .pipe(gulp.dest("./build/images"));
+            .pipe(gulp.dest("./dist/images"));
 }
 
 exports.default =  gulp.parallel(buildStyles, images); 

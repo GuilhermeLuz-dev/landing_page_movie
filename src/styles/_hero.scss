@@ -24,14 +24,15 @@
         padding: 70px 0;
         z-index: 2;
 
-        @media (max-width: 767px){
+        @media (max-width: 767px) {
             padding: 50px 20px;
         }
+
         h1 {
             width: 70%;
             margin-bottom: 2rem;
 
-            @media (max-width: 767px){
+            @media (max-width: 767px) {
                 width: 90%;
             }
         }
@@ -53,8 +54,14 @@
                 text-transform: uppercase;
                 font-family: variaveis.$default_font;
                 border-radius: 5px;
+                cursor: pointer;
 
-                @media (max-width: 767px){
+                &:hover {
+                    background-color: lighten(variaveis.$button_color, 10%);
+
+                }
+
+                @media (max-width: 767px) {
                     padding: 10px 40px;
                 }
             }
